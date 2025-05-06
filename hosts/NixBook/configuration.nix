@@ -4,7 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./../../nix-modules/
+      ./../../nix-modules
     ];
   
   networking.hostName = hostname; # Define your hostname.
