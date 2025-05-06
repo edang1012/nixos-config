@@ -41,7 +41,6 @@
     alacritty
     kitty
     btop
-    fastfetch
   ];
 
   system.stateVersion = stateVersion; 
