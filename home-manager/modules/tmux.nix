@@ -37,7 +37,6 @@
       
       unbind -T copy-mode-vi MouseDragEnd1Pane # don't exit copy mode when dragging with mouse
       
-      
       # Status Bar (modified from 'arcticicestudio/nord-tmux')
       set -g @prefix_highlight_fg black
       set -g @prefix_highlight_bg brightcyan
