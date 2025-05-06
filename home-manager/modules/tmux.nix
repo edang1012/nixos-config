@@ -8,7 +8,7 @@
 
     plugins = with pkgs; [
       tmuxPlugins.vim-tmux-navigator
-      tmuxPlugins.tmux-cpu
+      tmuxPlugins.cpu
     ];
 
     extraConfig = ''
