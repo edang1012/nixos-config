@@ -10,7 +10,7 @@
       
       -- This is where you actually apply your config choices
       
-      config.font = wezterm.font("MesloLGS Nerd Font Mono")
+      config.font = wezterm.font('JetBrains Mono')
       config.font_size = 14
       config.color_scheme = "nord"
       
