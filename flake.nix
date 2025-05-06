@@ -13,13 +13,29 @@
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "xenosen";
-  in {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
+    hosts = [
+      { hostname = "nixos"; stateVersion = "24.11"; }  #default fallback
+      { hostname = "NixBook"; stateVersion = "24.11"; }
+    ];
+
+    makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
+      system = system;
+      specialArgs = {
+        inherit inputs stateVersion hostname user;
+      };
+
       modules = [
-        ./hosts/nixos/configuration.nix
+        ./hosts/${hostname}/configuration.nix
       ];
     };
+  in {
+    nixosConfigurations = nixpkgs.lib.foldl' (configs: host:
+      configs // {
+        "${host.hostname}" = makeSystem {
+          inherit (host) hostname stateVersion;
+        };
+      }) {} hosts;
+
     homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
       pkgs = nixpkgs.legacyPackages.${system};
       extraSpecialArgs = {
