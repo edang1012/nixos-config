@@ -38,7 +38,6 @@
     neovim
     alacritty
     kitty
-    btop
   ];
 
   system.stateVersion = stateVersion; 
