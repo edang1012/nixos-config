@@ -6,7 +6,7 @@
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-        #ls = "eza --icons=always";
+        ls = "eza --icons=always";
       };
 
     history = {
