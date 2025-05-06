@@ -1,10 +1,10 @@
 { config, pkgs, homeStateVersion, user, ... }: 
 
 {
-  #imports = [
-  #  ./modules
+  imports = [
+    ./modules
   #  ./home-packages.nix
-  #];
+  ];
 
   home = {
     packages = with pkgs; [
