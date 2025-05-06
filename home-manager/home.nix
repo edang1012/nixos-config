@@ -3,14 +3,10 @@
 {
   imports = [
     ./modules
-  #  ./home-packages.nix
+    ./home-packages.nix
   ];
 
   home = {
-    packages = with pkgs; [
-      hello
-    ];
-
     username = user;
     homeDirectory = "/home/${user}";
     stateVersion = homeStateVersion;
