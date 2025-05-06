@@ -1,7 +1,7 @@
 {
   imports = [
     ./fastfetch.nix
-    #./tmux.nix
+    ./tmux.nix
     ./wezterm.nix
     ./zsh.nix
   ];
