@@ -1,10 +1,10 @@
 { config, pkgs, homeStateVersion, user, ... }: 
 
 {
-  #imports = [
+  imports = [
     ./modules
   #  ./home-packages.nix
-  #];
+  ];
 
   home = {
     username = user;
