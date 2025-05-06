@@ -36,15 +36,14 @@
         };
       }) {} hosts;
 
-    homeConfigurations.homeConfigName = inputs.home-manager.lib.homeManagerConfiguration {
-      # Specify the host architecture
-      pkgs = nixpkgs.legacyPackages."x86_64-linux";
-
-      # Specify your home configuration modules here, for example,
-      # the path to your home.nix.
-      modules = [ ./home-manager/home.nix ];
-
-      extraSpecialArgs = { inherit inputs; };
+    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
+      pkgs = nixpkgs.legacyPackages.${system};
+      extraSpecialArgs = {
+        inherit inputs homeStateVersion user;
+      };
+      modules = [
+        ./home-manager/home.nix
+      ];
     };
   };
 }
