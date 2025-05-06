@@ -1,5 +1,6 @@
-{ user, ... }: {
+{ pkgs, user, ... }: {
   users = {
+    defaultUserShell = pkgs.zsh;
     users.${user} = {
       isNormalUser = true;
       description = "Xenosen";
