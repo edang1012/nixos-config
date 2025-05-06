@@ -4,7 +4,7 @@
     mouse = true;
     escapeTime = 10;
     keyMode = "vi";
-    terminal = "screen-256color";
+    #terminal = "screen-256color";
 
     plugins = with pkgs; [
       tmuxPlugins.vim-tmux-navigator
@@ -12,6 +12,9 @@
     ];
 
     extraConfig = ''
+      set -g default-terminal "tmux-256color"
+      set -ag terminal-overrides ",xterm-256color:RGB"
+
       set -g prefix C-a
       unbind C-b
       bind-key C-a send-prefix
