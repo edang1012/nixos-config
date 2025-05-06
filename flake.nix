@@ -13,6 +13,7 @@
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "xenosen";
+    lib = nixpkgs.lib;
     pkgs = import nixpkgs { inherit system; };
     hosts = [
       { hostname = "nixos"; stateVersion = "24.11"; }  #default fallback
