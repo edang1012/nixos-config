@@ -39,7 +39,6 @@
     wget
     git
     neovim
-    alacritty
     kitty
   ];
 
