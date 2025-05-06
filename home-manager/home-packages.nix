@@ -9,6 +9,7 @@
     btop
     eza
     zoxide
+    hyprsunset
   ];
 
   fonts.fontconfig.enable = true;
