@@ -13,6 +13,7 @@
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "xenosen";
+    pkgs = import nixpkgs { inherit system; };
     hosts = [
       { hostname = "nixos"; stateVersion = "24.11"; }  #default fallback
       { hostname = "NixBook"; stateVersion = "24.11"; }
@@ -36,14 +37,16 @@
         };
       }) {} hosts;
 
-    homeConfigurations.${user} = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};
-      extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
+    homeConfigurations = {
+      myprofile = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        extraSpecialArgs = {
+          inherit inputs homeStateVersion user;
+        };
+        modules = [
+          ./home-manager/home.nix
+        ];
       };
-      modules = [
-        ./home-manager/home.nix
-      ];
     };
   };
 }
