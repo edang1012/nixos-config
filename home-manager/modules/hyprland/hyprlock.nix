@@ -63,8 +63,8 @@
         {
           size = "300, 60";
           outline_thickness = 4;
-          dots_size = "0.2";
-          dots_spacing = "0.2";
+          dots_size = 0.2;
+          dots_spacing = 0.2;
           dots_center = true;
           outer_color = "0xff81a1c1";
           inner_color = "0xff81a1c1";
