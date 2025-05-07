@@ -9,6 +9,7 @@
     btop
     eza
     zoxide
+    hyprshot
     hyprsunset
   ];
 
