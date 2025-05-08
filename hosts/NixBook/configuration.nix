@@ -4,7 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./../../nix-modules/defaults.nix
+      ./../../nix-modules
     ];
   
   networking.hostName = hostname; # Define your hostname.
@@ -25,25 +25,30 @@
     variant = "";
   };
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Install firefox.
+  programs.firefox.enable = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    home-manager
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
     git
     neovim
-    alacritty
     kitty
-    btop
-    fastfetch
+  ];
+
+  # Create Swapfile
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 16 * 1024; # 16GB
+    }
   ];
 
   system.stateVersion = stateVersion; 
-
 }
