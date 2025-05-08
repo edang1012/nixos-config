@@ -11,6 +11,8 @@
     zoxide
     hyprshot
     hyprsunset
+    brightnessctl
+    playerctl
   ];
 
   fonts.fontconfig.enable = true;
