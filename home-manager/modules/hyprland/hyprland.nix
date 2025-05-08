@@ -127,11 +127,11 @@
         #name = bcm5974;
         name = "epic-mouse-v1";
         sensitivity = "-0.5";
-      }
+      };
       
       gestures = {
         workspace_swipe = false;
-      }
+      };
 
       # Keybinds
       "$mainMod" = "SUPER";
