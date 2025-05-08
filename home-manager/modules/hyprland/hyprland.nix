@@ -3,8 +3,8 @@
     enable = true;
     settings = {
       # Monitors
-      #monitor = ",preferred,auto,1.6";
-      monitor = ",preferred,auto,auto";
+      monitor = ",preferred,auto,1.6";
+      #monitor = ",preferred,auto,auto";
 
       # Programs
       "$terminal" = "wezterm";
