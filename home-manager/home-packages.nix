@@ -11,7 +11,8 @@
     zoxide
     hyprshot
     #hyprsunset
-    hyprshade
+    #hyprshade
+    wlsunset
     brightnessctl
     playerctl
   ];
