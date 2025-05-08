@@ -42,6 +42,13 @@
     kitty
   ];
 
-  system.stateVersion = stateVersion; 
+  # Create Swapfile
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 16 * 1024; # 16GB
+    }
+  ];
 
+  system.stateVersion = stateVersion; 
 }
