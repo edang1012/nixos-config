@@ -4,6 +4,6 @@
     ./tmux.nix
     ./wezterm.nix
     ./zsh.nix
-    #./hyprland
+    ./hyprland
   ];
 }
