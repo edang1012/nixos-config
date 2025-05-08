@@ -14,7 +14,7 @@
       # Autostart
       exec-once = [
         "hypridle & hyprpaper"
-        "hyprsunset --temperature 4500"
+        #"hyprsunset --temperature 4500"
       ];
 
       # Environment Variables
