@@ -10,7 +10,8 @@
     eza
     zoxide
     hyprshot
-    hyprsunset
+    #hyprsunset
+    hyprshade
     brightnessctl
     playerctl
   ];
