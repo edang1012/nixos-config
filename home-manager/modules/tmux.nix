@@ -7,20 +7,13 @@
     #terminal = "screen-256color";
 
     plugins = with pkgs; [
-      #tmuxPlugins.vim-tmux-navigator
+      tmuxPlugins.vim-tmux-navigator
       #tmuxPlugins.cpu
     ];
 
     extraConfig = ''
       set -g default-terminal "tmux-256color"
       set -ag terminal-overrides ",xterm-256color:RGB"
-
-      # tpm plugin
-      set -g @plugin 'tmux-plugins/tpm'
-      
-      # list of tmux plugins
-      set -g @plugin 'christoomey/vim-tmux-navigator'
-      set -g @plugin 'tmux-plugins/tmux-cpu'
 
       set -g prefix C-a
       unbind C-b
@@ -77,9 +70,6 @@
       set -g window-status-format "#[fg=black,bg=brightblack,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack]#I #[fg=white,bg=brightblack,nobold,noitalics,nounderscore] #[fg=white,bg=brightblack]#W #F #[fg=brightblack,bg=black,nobold,noitalics,nounderscore]"
       set -g window-status-current-format "#[fg=black,bg=cyan,nobold,noitalics,nounderscore] #[fg=black,bg=cyan]#I #[fg=black,bg=cyan,nobold,noitalics,nounderscore] #[fg=black,bg=cyan]#W #F #[fg=cyan,bg=black,nobold,noitalics,nounderscore]"
       set -g window-status-separator ""
-
-      # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-      run '~/.tmux/plugins/tpm/tpm'
     '';
   };
 }
