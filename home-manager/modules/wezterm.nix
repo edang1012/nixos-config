@@ -11,7 +11,7 @@
       -- This is where you actually apply your config choices
       
       config.font = wezterm.font('JetBrains Mono')
-      config.font_size = 14
+      config.font_size = 12
       config.color_scheme = "nord"
       
       config.window_decorations = "TITLE | RESIZE"

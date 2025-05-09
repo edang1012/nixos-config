@@ -15,6 +15,7 @@
     wlsunset
     brightnessctl
     playerctl
+    libnotify
   ];
 
   fonts.fontconfig.enable = true;
