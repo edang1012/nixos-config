@@ -13,7 +13,7 @@
 
       # Autostart
       exec-once = [
-        "hypridle & hyprpaper"
+        "waybar & hypridle & hyprpaper"
         "wlsunset -T 4500"
         #"hyprsunset --temperature 4500"
       ];

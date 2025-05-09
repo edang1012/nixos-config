@@ -5,5 +5,6 @@
     ./wezterm.nix
     ./zsh.nix
     ./hyprland
+    ./waybar
   ];
 }
