@@ -8,5 +8,6 @@
     ./nix.nix
     ./home-manager.nix
     ./hyprland.nix
+    ./git.nix
   ];
 }
