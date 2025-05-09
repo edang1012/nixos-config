@@ -7,5 +7,6 @@
     ./hyprland
     ./waybar
     ./wofi.nix
+    ./starship.nix
   ];
 }
