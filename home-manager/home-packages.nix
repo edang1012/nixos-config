@@ -13,18 +13,24 @@
     eza
     zoxide
     hyprshot
-    #hyprsunset
-    #hyprshade
     wlsunset
     brightnessctl
     playerctl
     libnotify
-    spotify
-    spicetify-cli
+    vesktop
+    obsidian
+
+    # Official discord, but doesn't really work
+    #discord
+    #(discord.override {
+    #  withVencord = true;
+    #})
   ];
 
   # Add arguments to fix DPI/scaling on wayland
-  xdg.desktopEntries =  {
+  xdg.desktopEntries = {
     spotify = { name = "Spotify"; exec = "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
+    discord = { name = "Discord"; exec = "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
+    obsidian = { name = "Obsidian"; exec = "obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
   };
 }

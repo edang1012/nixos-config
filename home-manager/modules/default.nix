@@ -8,5 +8,6 @@
     ./waybar
     ./wofi.nix
     ./starship.nix
+    ./spicetify.nix
   ];
 }

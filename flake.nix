@@ -7,9 +7,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: let 
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }@inputs: let 
     system = "x86_64-linux";
     homeStateVersion = "24.11";
     user = "xenosen";
@@ -42,7 +46,7 @@
 	config.allowUnfree = true;
       };
       extraSpecialArgs = {
-        inherit inputs homeStateVersion user;
+        inherit inputs homeStateVersion spicetify-nix user;
       };
       modules = [
         ./home-manager/home.nix
