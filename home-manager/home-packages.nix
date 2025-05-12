@@ -17,6 +17,8 @@
     brightnessctl
     playerctl
     libnotify
+
+    # apps
     vesktop
     obsidian
 

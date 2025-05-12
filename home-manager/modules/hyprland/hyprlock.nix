@@ -17,7 +17,7 @@
           path = "~/Pictures/wallpaper1.jpg";
           blur_passes = 2;
           blur_size = 4;
-          color = "0xff4c566a";
+          color = "0xff434c5e";
         }
       ];
 
@@ -26,7 +26,7 @@
         {
           path = "~/Pictures/wallpaper1.jpg";
           size = 120;
-          border_color = "0xff81a1c1";
+          border_color = "0xff88c0d0";
       
           position = "0, 0";
           halign = "center";
@@ -66,14 +66,14 @@
           dots_size = 0.2;
           dots_spacing = 0.2;
           dots_center = true;
-          outer_color = "0xff81a1c1";
-          inner_color = "0xff81a1c1";
+          outer_color = "0xff88c0d0";
+          inner_color = "0xff3b4252";
           font_family = "$font";
-          font_color = "0xffeceff4";
+          font_color = "0xff88c0d0";
           fade_on_empty = false;
           placeholder_text = "   Enter Password";
           hide_input = false;
-          check_color = "0xff88c0d0";
+          check_color = "0xff8fbcbb";
           fail_color = "0xffbf616a";
           fail_text = "<i>$FAIL <b>($ATTEMPTS)</b></i>";
           capslock_color = "0xffa3be8c";
