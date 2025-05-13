@@ -9,5 +9,6 @@
     ./wofi.nix
     ./starship.nix
     ./spicetify.nix
+    ./wlogout.nix
   ];
 }

@@ -30,8 +30,8 @@
         gaps_out = 10;
         border_size = 2;
     
-        "col.active_border" = "rgba(aadddddd) rgba(aaffffff) 45deg";
-        "col.inactive_border" = "rgba(595959aa)";
+        "col.active_border" = "0xff88c0d0";
+	"col.inactive_border" = "0xff3b4252";
     
         resize_on_border = true;
         allow_tearing = false;
@@ -143,6 +143,7 @@
         "$mainMod, F, togglefloating,"
         "$mainMod, space, exec, $menu"
         "$mainMod, H, togglesplit,"
+	"$mainMod, N, exec, swaync-client -t -sw"
         ", PRINT, exec, hyprshot -m window"
         "alt, L, exec, hyprlock"
         

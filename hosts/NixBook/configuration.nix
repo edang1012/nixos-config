@@ -39,6 +39,7 @@
     wget
     neovim
     kitty
+    python3
   ];
 
   # Create Swapfile
