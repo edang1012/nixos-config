@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       # Monitors
-      monitor = ",preferred,auto,1.6";
+      monitor = ",preferred,auto,1.333333";
       #monitor = ",preferred,auto,auto";
 
       # Programs

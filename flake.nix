@@ -20,6 +20,7 @@
     hosts = [
       { hostname = "nixos"; stateVersion = "24.11"; }  #default fallback
       { hostname = "NixBook"; stateVersion = "24.11"; }
+      { hostname = "NixFramework"; stateVersion = "24.11"; }
     ];
 
     makeSystem = { hostname, stateVersion }: nixpkgs.lib.nixosSystem {
