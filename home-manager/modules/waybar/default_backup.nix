@@ -10,28 +10,26 @@
 	margin-left = 8;
 	margin-right = 8;
 	margin-bottom = 0;
-	spacing = 5;
+	spacing = 8;
 
 	modules-left = [
-	  "custom/power"
 	  "hyprland/workspaces"
 	  "hyprland/window"
-	  #"custom/media"
+	  "custom/media"
 	];
 	modules-center = [
 	  "clock"
 	];
 	modules-right = [
-	  "custom/media"
 	  "cpu"
 	  "memory"
-	  #"temperature"
-	  "bluetooth"
+	  "temperature"
 	  "network"
 	  "pulseaudio"
 	  "power-profiles-daemon"
 	  "battery"
 	  "custom/notification"
+	  "custom/power"
 	];
 
 	"clock" = {
@@ -76,10 +74,10 @@
             "warning" = 30;
             "critical" = 15;
           };
-          "format" = "<span size='large'>{icon}</span>  {capacity}%";
+          "format" = "{capacity}%  {icon}";
           "format-full" = "{capacity}%  {icon}";
-          "format-charging" = "<span size='large'>󰂄</span>  {capacity}%";
-          "format-plugged" = "<span size='large'></span>  {capacity}%";
+          "format-charging" = "{capacity}%  󰂄";
+          "format-plugged" = "{capacity}%  ";
           "format-alt" = "{time} {icon}";
 	  "format-icons" = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
 	  "tooltip-format" = "{timeTo}\nPower: {power}W\nCycles: {cycles}\nHealth: {health}%";
@@ -122,15 +120,6 @@
           "max-length" = 50;
         };
 
-	"bluetooth" = {
-	  "format" = "󰂯";
-	  "format-disabled" = "󰂲";
-	  "format-connected" = " {num_connections} connected";
-	  "tooltip-format" = "{controller_alias}\t{controller_address}";
-	  "tooltip-format-connected" = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
-	  "tooltip-format-enumerate-connected" = "{device_alias}\t{device_address}";
-        };
-
 	"hyprland/workspaces" = {
           "format" = "{icon}:  {windows}";
           "format-window-separator" = " ";
@@ -148,16 +137,16 @@
         };
 
         "hyprland/window" = {
-          "format" = "    {initialTitle}";
+          "format" = "{initialTitle}";
 	  "icon" = false;
           "rewrite" = {
-	    "(.*) Obsidian (.*)" = "    Obsidian";
-            "(.*) Mozilla Firefox" = "    Firefox";
-	    "(.*) Spotify Premium" = "    Spotify";
-	    "(.*) vesktop" = "    Discord";
-	    "(.*) wezterm" = "    WezTerm";
-	    "(.*) Loading..." = "    Nautilus";
-	    "    " = "    Desktop";
+	    "(.*) Obsidian (.*)" = "Obsidian";
+            "Mozilla Firefox" = "Firefox";
+	    "Spotify Premium" = "Spotify";
+	    "vesktop" = "Discord";
+	    "wezterm" = "WezTerm";
+	    "Loading..." = "Nautilus";
+	    "" = "Desktop";
           };
           "separate-outputs" = true;
 	  "tooltip" = false;
@@ -191,15 +180,14 @@
             "Paused" = " ";
           };
           "return-type" = "json";
-          "max-length" = 45;
-          "exec" = "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}} - {{artist}}\", \"tooltip\": \"{{playerName}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
+          "max-length" = 35;
+          "exec" = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
           "on-click" = "playerctl play-pause";
         };
         
 	"custom/power" = {
 	  "format" = "⏻";
 	  "interval" = "once";
-	  "tooltip" = false;
 	  "on-click" = "wlogout";
 	};
 
@@ -215,102 +203,70 @@
 	}
 
 	window#waybar {
-          background: #3b4252;
-	  border: 2px solid #88c0d0;
-          border-radius: 10px;
+          background: transparent;
+	  border: 0px solid #88c0d0;
+          border-radius: 8px;
         }
 
         .modules-left>widget:first-child .module {
-          margin-left: 5px;
+          margin-left: 0px;
         }
 
         .modules-right>widget:last-child .module {
-          margin-right: 5px;
+          margin-right: 0px;
         }
 
-        #custom-power {
+        #clock, #battery, #cpu, #memory, 
+	#temperature, #window, #custom-media {
           color: #88c0d0;
-	  background-color: transparent;
+	  background-color: #3b4252;
           padding-left: 10px;
 	  padding-right: 10px;
           margin-top: 0px; 
 	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
-	}
-
-        #window, #custom-media, #clock {
-          color: #88c0d0;
-	  background-color: transparent;
-          padding-left: 10px;
-	  padding-right: 10px;
-          margin-top: 0px; 
-	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
-	}
-
-        #battery, #cpu, #memory {
-          color: #88c0d0;
-	  background-color: transparent;
-          padding-left: 5px;
-	  padding-right: 5px;
-          margin-top: 0px; 
-	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
-	}
-
-	#temperature {
-          color: #88c0d0;
-	  background-color: transparent;
-          padding-left: 5px;
-	  padding-right: 10px;
-          margin-top: 0px; 
-	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
+	  border: 2px solid #88c0d0;
+	  border-radius: 8px;
 	}
 
 	#custom-notification {
           color: #88c0d0;
-	  background-color: transparent;
+	  background-color: #3b4252;
+          padding-left: 10px;
+	  padding-right: 12px;
+          margin-top: 0px; 
+	  margin-bottom: 0px;
+	  border: 2px solid #88c0d0;
+	  border-radius: 8px;
+	}
+
+	#network, #pulseaudio, #power-profiles-daemon {
+          color: #88c0d0;
+	  background-color: #3b4252;
+          padding-left: 10px;
+	  padding-right: 14px;
+          margin-top: 0px; 
+	  margin-bottom: 0px;
+	  border: 2px solid #88c0d0;
+	  border-radius: 8px;
+	}
+
+	#custom-power {
+          color: #88c0d0;
+	  background-color: #3b4252;
           padding-left: 10px;
 	  padding-right: 13px;
           margin-top: 0px; 
 	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
+	  border: 2px solid #88c0d0;
+	  border-radius: 8px;
 	}
 
-	#bluetooth {
-          color: #88c0d0;
-	  background-color: transparent;
-          padding-left: 10px;
-	  padding-right: 5px;
-          margin-top: 0px; 
-	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
-	}
-
-
-	#network, #pulseaudio, #power-profiles-daemon {
-          color: #88c0d0;
-	  background-color: transparent;
-          padding-left: 5px;
-	  padding-right: 9px;
-          margin-top: 0px; 
-	  margin-bottom: 0px;
-	  border: transparent;
-	  border-radius: 10px;
-	}
 
 	#workspaces {
           color: #88c0d0;
-	  background-color: transparent;
-	  border: transparent;
-	  border-radius: 10px;
+	  background-color: #3b4252;
+	  border: 2px solid #88c0d0;
+	  border-radius: 8px;
 	}
 
 	#workspaces button {
@@ -318,25 +274,22 @@
         }
 
         #workspaces button.active {
-          color: #3b4252;
-	  background-color: #88c0d0;
-	  border-radius: 10px;
+          color: #88c0d0;
+	  background-color: #4c566a;
+	  border-radius: 8px;
         }
 
 	#workspaces button:hover {
-	  color: #3b4252;
-          background: #88c0d0;
+          background: #4c566a;
 	  border-color: transparent;
-	  border-radius: 10px;
           box-shadow: none;
           text-shadow: none;
 	  transition: none;
         }	
 	#workspaces button:hover.active {
-	  color: #3b4252;
-          background: #88c0d0;
+          background: #4c566a;
 	  border-color: transparent;
-	  border-radius: 10px;
+	  border-radius: 8px;
           box-shadow: none;
           text-shadow: none;
 	  transition: none;
