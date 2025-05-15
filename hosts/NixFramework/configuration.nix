@@ -25,6 +25,9 @@
     variant = "";
   };
 
+  # Enable fingerprint scanner
+  services.fprintd.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -40,14 +43,6 @@
     neovim
     kitty
     python3
-  ];
-
-  # Create Swapfile
-  swapDevices = [
-    {
-      device = "/swapfile";
-      size = 16 * 1024; # 16GB
-    }
   ];
 
   system.stateVersion = stateVersion; 

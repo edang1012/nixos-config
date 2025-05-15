@@ -11,6 +11,11 @@
         hide_cursor = true;
       };
 
+      # Authentication
+      auth = {
+        "fingerprint:enabled" = true;
+      };
+
       # Background
       background = [
         {
@@ -71,7 +76,7 @@
           font_family = "$font";
           font_color = "0xff88c0d0";
           fade_on_empty = false;
-          placeholder_text = "   Enter Password";
+          placeholder_text = "   Enter Password or Scan Finger";
           hide_input = false;
           check_color = "0xff8fbcbb";
           fail_color = "0xffbf616a";

@@ -14,4 +14,7 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+
+  # Silence news notifications cause they are annoying
+  news.display = "silent";
 }

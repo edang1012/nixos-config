@@ -26,8 +26,8 @@
 
       # Look and Feel
       general = {
-        gaps_in = 5;
-        gaps_out = 10;
+        gaps_in = 4;
+        gaps_out = 8;
         border_size = 2;
     
         "col.active_border" = "0xff88c0d0";

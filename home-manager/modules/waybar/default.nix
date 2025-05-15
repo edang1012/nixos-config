@@ -6,11 +6,11 @@
         layer = "top";
 	position = "top";
 	height = 20;
-	margin-top = 10;
-	margin-left = 10;
-	margin-right = 10;
+	margin-top = 8;
+	margin-left = 8;
+	margin-right = 8;
 	margin-bottom = 0;
-	spacing = 10;
+	spacing = 8;
 
 	modules-left = [
 	  "hyprland/workspaces"
