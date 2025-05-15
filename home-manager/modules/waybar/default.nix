@@ -34,7 +34,7 @@
 
 	"clock" = {
 	  "format" = "󰃰   {:%a, %b. %d - %I:%M %p}";
-          "tooltip-format" = "<tt><big>{calendar}</big></tt>";
+          "tooltip-format" = "<tt><small>{calendar}</small></tt>";
           "calendar" = {
 	    "mode" = "month";
 	    "mode-mon-col" = 3;
@@ -180,7 +180,7 @@
             "Paused" = " ";
           };
           "return-type" = "json";
-          "max-length" = 70;
+          "max-length" = 35;
           "exec" = "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F";
           "on-click" = "playerctl play-pause";
         };
@@ -205,7 +205,7 @@
 	window#waybar {
           background: transparent;
 	  border: 0px solid #88c0d0;
-          border-radius: 6px;
+          border-radius: 8px;
         }
 
         .modules-left>widget:first-child .module {
@@ -225,7 +225,7 @@
           margin-top: 0px; 
 	  margin-bottom: 0px;
 	  border: 2px solid #88c0d0;
-	  border-radius: 6px;
+	  border-radius: 8px;
 	}
 
 	#custom-notification {
@@ -236,7 +236,7 @@
           margin-top: 0px; 
 	  margin-bottom: 0px;
 	  border: 2px solid #88c0d0;
-	  border-radius: 6px;
+	  border-radius: 8px;
 	}
 
 	#network, #pulseaudio, #power-profiles-daemon {
@@ -247,7 +247,7 @@
           margin-top: 0px; 
 	  margin-bottom: 0px;
 	  border: 2px solid #88c0d0;
-	  border-radius: 6px;
+	  border-radius: 8px;
 	}
 
 	#custom-power {
@@ -258,7 +258,7 @@
           margin-top: 0px; 
 	  margin-bottom: 0px;
 	  border: 2px solid #88c0d0;
-	  border-radius: 6px;
+	  border-radius: 8px;
 	}
 
 
@@ -266,7 +266,7 @@
           color: #88c0d0;
 	  background-color: #3b4252;
 	  border: 2px solid #88c0d0;
-	  border-radius: 6px;
+	  border-radius: 8px;
 	}
 
 	#workspaces button {
@@ -276,7 +276,7 @@
         #workspaces button.active {
           color: #88c0d0;
 	  background-color: #4c566a;
-	  border-radius: 6px;
+	  border-radius: 8px;
         }
 
 	#workspaces button:hover {
@@ -289,7 +289,7 @@
 	#workspaces button:hover.active {
           background: #4c566a;
 	  border-color: transparent;
-	  border-radius: 6px;
+	  border-radius: 8px;
           box-shadow: none;
           text-shadow: none;
 	  transition: none;
