@@ -287,7 +287,7 @@
           color: #88c0d0;
 	  background-color: transparent;
           padding-left: 10px;
-	  padding-right: 5px;
+	  padding-right: 4px;
           margin-top: 0px; 
 	  margin-bottom: 0px;
 	  border: transparent;
@@ -299,7 +299,7 @@
           color: #88c0d0;
 	  background-color: transparent;
           padding-left: 5px;
-	  padding-right: 9px;
+	  padding-right: 8px;
           margin-top: 0px; 
 	  margin-bottom: 0px;
 	  border: transparent;
