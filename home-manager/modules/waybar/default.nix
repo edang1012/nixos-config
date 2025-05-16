@@ -82,7 +82,7 @@
           "format-plugged" = "<span size='large'></span>  {capacity}%";
           "format-alt" = "{time} {icon}";
 	  "format-icons" = ["󰂎" "󰁻" "󰁾" "󰂀" "󰁹"];
-	  "tooltip-format" = "{timeTo}\nPower: {power}W\nCycles: {cycles}\nHealth: {health}%";
+	  "tooltip-format" = "Percentage: {capacity}%\n{timeTo}\nPower: {power}W\nCycles: {cycles}\nHealth: {health}%";
         };
 
 	"power-profiles-daemon" = {
@@ -141,9 +141,9 @@
           "window-rewrite" = {
             "class<firefox>" = "󰈹";
 	    "class<spotify>" = "";
-	    "class<obsidian>" = "󱓧";
-	    "title<.*discord.*>" = "";
-            "term" = "";
+	    "class<obsidian>" = "󱞁";
+	    "class<vesktop>" = "";
+            "class<org.wezfurlong.wezterm>" = "";
 	  };
         };
 
@@ -160,7 +160,8 @@
 	    "    " = "    Desktop";
           };
           "separate-outputs" = true;
-	  "tooltip" = false;
+	  "tooltip" = true;
+	  "tooltip-format" = "{class}";
         };
         
 	"custom/notification" = {
