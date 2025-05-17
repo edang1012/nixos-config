@@ -1,8 +1,8 @@
 {
-  programs.wlogout = {
-    enable = true;
-    #style = ''
-      
-    #'';
-  };
+    programs.wlogout = {
+        enable = true;
+        #style = ''
+
+        #'';
+    };
 }

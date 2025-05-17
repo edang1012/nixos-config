@@ -1,20 +1,20 @@
 { config, pkgs, homeStateVersion, user, ... }: 
 
 {
-  imports = [
-    ./modules
-    ./home-packages.nix
-  ];
+    imports = [
+        ./modules
+        ./home-packages.nix
+    ];
 
-  home = {
-    username = user;
-    homeDirectory = "/home/${user}";
-    stateVersion = homeStateVersion;
-  };
+    home = {
+        username = user;
+        homeDirectory = "/home/${user}";
+        stateVersion = homeStateVersion;
+    };
 
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+    # Let Home Manager install and manage itself.
+    programs.home-manager.enable = true;
 
-  # Silence news notifications cause they are annoying
-  news.display = "silent";
+    # Silence news notifications cause they are annoying
+    news.display = "silent";
 }

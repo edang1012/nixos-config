@@ -1,4 +1,4 @@
 {
-  # Enable Hyprland
-  programs.hyprland.enable = true;
+    # Enable Hyprland
+    programs.hyprland.enable = true;
 }

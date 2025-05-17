@@ -1,38 +1,38 @@
 { pkgs, ... }: {
 
-  fonts.fontconfig.enable = true;
+    fonts.fontconfig.enable = true;
 
-  home.packages = with pkgs; [
-    # fonts
-    noto-fonts-cjk-sans
-    nerd-fonts.jetbrains-mono
+    home.packages = with pkgs; [
+        # fonts
+        noto-fonts-cjk-sans
+        nerd-fonts.jetbrains-mono
 
-    # cli
-    hello
-    btop
-    eza
-    zoxide
-    hyprshot
-    wlsunset
-    brightnessctl
-    playerctl
-    libnotify
+        # cli
+        hello
+        btop
+        eza
+        zoxide
+        hyprshot
+        wlsunset
+        brightnessctl
+        playerctl
+        libnotify
 
-    # apps
-    vesktop
-    obsidian
+        # apps
+        vesktop
+        obsidian
 
-    # Official discord, but doesn't really work
-    #discord
-    #(discord.override {
-    #  withVencord = true;
-    #})
-  ];
+        # Official discord, but doesn't really work
+        #discord
+        #(discord.override {
+        #  withVencord = true;
+        #})
+    ];
 
-  # Add arguments to fix DPI/scaling on wayland
-  xdg.desktopEntries = {
-    spotify = { name = "Spotify"; exec = "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
-    discord = { name = "Discord"; exec = "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
-    obsidian = { name = "Obsidian"; exec = "obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
-  };
+    # Add arguments to fix DPI/scaling on wayland
+    xdg.desktopEntries = {
+        spotify = { name = "Spotify"; exec = "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
+        discord = { name = "Discord"; exec = "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
+        obsidian = { name = "Obsidian"; exec = "obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland"; };
+    };
 }
