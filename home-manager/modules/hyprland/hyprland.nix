@@ -15,6 +15,7 @@
             exec-once = [
                 "waybar & hypridle & hyprpaper"
                 "wlsunset -T 4500"
+                #"swayosd-server -s ~/Documents/git/nixos-config/home-manager/modules/hyprland/swayosd/swayosd.css"
                 #"hyprsunset --temperature 4500"
             ];
 
@@ -193,12 +194,21 @@
             ];
 
             bindel = [
-                ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
-                ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-                ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
-                ",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
-                ",XF86MonBrightnessUp, exec, brightnessctl s 5%+"
-                ",XF86MonBrightnessDown, exec, brightnessctl s 5%-"
+                #",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+                #",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+                #",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+                #",XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+                #",XF86MonBrightnessUp, exec, brightnessctl s 5%+"
+                #",XF86MonBrightnessDown, exec, brightnessctl s 5%-"
+                #",XF86KbdBrightnessUp, exec, brightnessctl -d smc::kbd_backlight s 10%+"
+                #",XF86KbdBrightnessDown, exec, brightnessctl -d smc::kbd_backlight s 10%-"
+
+                ",XF86AudioRaiseVolume, exec, swayosd-client --output-volume 10 --max-volume 100"
+                ",XF86AudioLowerVolume, exec, swayosd-client --output-volume -10"
+                ",XF86AudioMute, exec, swayosd-client --output-volume mute-toggle"
+                ",XF86AudioMicMute, exec, swayosd-client --input-volume mute-toggle"
+                ",XF86MonBrightnessUp, exec, swayosd-client --brightness +10"
+                ",XF86MonBrightnessDown, exec, swayosd-client --brightness -10"
                 ",XF86KbdBrightnessUp, exec, brightnessctl -d smc::kbd_backlight s 10%+"
                 ",XF86KbdBrightnessDown, exec, brightnessctl -d smc::kbd_backlight s 10%-"
             ];
