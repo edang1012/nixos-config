@@ -6,10 +6,11 @@
         ./zsh.nix
         ./hyprland
         ./waybar
-        ./wofi.nix
+        #./wofi.nix
         ./starship.nix
         ./spicetify.nix
         ./wlogout.nix
         ./nvf.nix
+        ./anyrun.nix
     ];
 }

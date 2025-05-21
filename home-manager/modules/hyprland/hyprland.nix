@@ -9,7 +9,8 @@
             # Programs
             "$terminal" = "wezterm";
             "$fileManager" = "dolphin";
-            "$menu" = "wofi --show drun";
+            #"$menu" = "wofi --show drun";
+            "$menu" = "anyrun";
 
             # Autostart
             exec-once = [

@@ -264,7 +264,7 @@
             }
 
             .widget-dnd>switch slider:checked {
-                background: #3d4252;
+                background: #3b4252;
                 border: none;
                 border-radius: 8px;
                 margin: 2px 2px 2px 2px;
@@ -279,7 +279,7 @@
             }
 
             .widget-volume trough {
-                background: #3d4252;
+                background: #3b4252;
                 border: none;
                 border-radius: 10px;
                 margin-left: 10px;
@@ -310,7 +310,7 @@
 
             .widget-volume button {
                 color: #d8dee9;
-                background: #3d4252;
+                background: #3b4252;
                 border: none;
                 border-radius: 8px;
                 padding: 2px 12px 2px 6px;
@@ -320,7 +320,7 @@
             } 
 
             .widget-volume button:hover {
-                color: #3d4252;
+                color: #3b4252;
                 background: #88c0d0;
                 border: none;
                 outline: none;
@@ -374,7 +374,7 @@
             }
 
             .widget-mpris>box>button:hover {
-                color: #3d4252;
+                color: #3b4252;
                 background: #88c0d0;
                 border:none;
                 text-shadow: none;
@@ -392,7 +392,7 @@
 
             .widget-buttons-grid>flowbox>flowboxchild>button {
                 color: #d8dee9;
-                background: #3d4252;
+                background: #3b4252;
                 border: none;
                 border-radius: 8px;
                 padding: 5px 20px;
@@ -403,7 +403,7 @@
 
             .widget-buttons-grid>flowbox>flowboxchild>button:hover,
             .widget-buttons-grid>flowbox>flowboxchild>button:checked {
-                color: #3d4252;
+                color: #3b4252;
                 background: #88c0d0;
                 outline: none;
             }

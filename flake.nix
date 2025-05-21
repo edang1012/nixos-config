@@ -15,9 +15,13 @@
             url = "github:Gerg-L/spicetify-nix";
             inputs.nixpkgs.follows = "nixpkgs";
         };
+        anyrun = {
+            url = "github:anyrun-org/anyrun";
+            inputs.nixpkgs.follows = "nixpkgs";
+        };
     };
 
-    outputs = { self, nixpkgs, home-manager, nvf, spicetify-nix, ... }@inputs: let 
+    outputs = { self, nixpkgs, home-manager, nvf, spicetify-nix, anyrun, ... }@inputs: let 
         system = "x86_64-linux";
         homeStateVersion = "24.11";
         user = "xenosen";
@@ -51,7 +55,7 @@
                 config.allowUnfree = true;
             };
             extraSpecialArgs = {
-                inherit inputs homeStateVersion spicetify-nix user;
+                inherit inputs homeStateVersion spicetify-nix anyrun user;
             };
             modules = [
                 nvf.homeManagerModules.default
