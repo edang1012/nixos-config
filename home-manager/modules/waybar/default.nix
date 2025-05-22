@@ -198,10 +198,10 @@
                 };
 
                 "custom/power" = {
-                    "format" = "⏻";
+                    "format" = "";
                     "interval" = "once";
                     "tooltip" = false;
-                    "on-click" = "wlogout";
+                    "on-click" = "anyrun";
                 };
 
             };

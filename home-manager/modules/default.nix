@@ -9,8 +9,9 @@
         #./wofi.nix
         ./starship.nix
         ./spicetify.nix
-        ./wlogout.nix
+        #./wlogout.nix
         ./nvf.nix
         ./anyrun.nix
+        ./easyeffects
     ];
 }

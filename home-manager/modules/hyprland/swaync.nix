@@ -68,44 +68,44 @@
                 buttons-grid = {
                     actions = [
                         {
-                            label = "⏻";
-                            command = "systemctl poweroff";
+                            label = "󰹑";
+                            command = "hyprshot -m output --clipboard-only";
                         }
                         {
-                            label = "";
-                            command = "systemctl reboot";
+                            label = "󱣴";
+                            command = "hyprshot -m window --clipboard-only";
+                        }
+                        {
+                            label = "󱣵";
+                            command = "hyprshot -m region --clipboard-only";
+                        }
+                        {
+                            label = "";
+                            command = "obs";
+                        }
+                        {
+                            label = "󰴱";
+                            command = "hyprpicker";
                         }
                         {
                             label = "";
                             command = "hyprlock";
                         }
                         {
-                            label = "󰍃";
-                            command = "hyprctl dispatch exit";
-                        }
-                        {
                             label = "󰤄";
                             command = "systemctl suspend";
                         }
                         {
-                            label = "";
-                            command = "swayosd-client --output-volume mute-toggle";
+                            label = "󰍃";
+                            command = "hyprctl dispatch exit";
                         }
                         {
-                            label = "";
-                            command = "swayosd-client --input-volume mute-toggle";
+                            label = "";
+                            command = "systemctl reboot";
                         }
                         {
-                            label = "󰖩";
-                            command = "$HOME/.local/bin/shved/rofi-menus/wifi-menu.sh";
-                        }
-                        {
-                            label = "󰂯";
-                            command = "blueman-manager";
-                        }
-                        {
-                            label = "";
-                            command = "obs";
+                            label = "⏻";
+                            command = "systemctl poweroff";
                         }
                     ];
                 };
@@ -395,7 +395,7 @@
                 background: #3b4252;
                 border: none;
                 border-radius: 8px;
-                padding: 5px 20px;
+                padding: 5px 20px 5px 17px;
                 margin: 2px;
                 text-shadow: none;
                 outline: none;
