@@ -69,8 +69,8 @@
 
             #match:selected,
             #match:hover {
-                background-color: #88c0d0;
-                color: #3b4252;
+                background-color: #4c566a;
+                color: #d8dee9;
                 border-radius: 10px;
             }
 

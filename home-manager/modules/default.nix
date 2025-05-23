@@ -8,6 +8,7 @@
         ./waybar
         #./wofi.nix
         ./starship.nix
+        #./oh-my-posh.nix
         ./spicetify.nix
         #./wlogout.nix
         ./nvf.nix

@@ -25,7 +25,7 @@
             control-center-margin-right = 8;
             control-center-margin-left = 8;
             control-center-width = 400;
-            control-center-height = 1070;
+            control-center-height = 1075;
 
             # Notification Settings
             notification-icon-size = 64;
@@ -68,6 +68,10 @@
                 buttons-grid = {
                     actions = [
                         {
+                            label = "󰻃";
+                            command = "obs";
+                        }
+                        {
                             label = "󰹑";
                             command = "hyprshot -m output --clipboard-only";
                         }
@@ -78,10 +82,6 @@
                         {
                             label = "󱣵";
                             command = "hyprshot -m region --clipboard-only";
-                        }
-                        {
-                            label = "";
-                            command = "obs";
                         }
                         {
                             label = "󰴱";

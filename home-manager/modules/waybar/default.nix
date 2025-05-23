@@ -5,7 +5,7 @@
             mainBar = {
                 layer = "top";
                 position = "top";
-                height = 20;
+                height = 30;
                 margin-top = 8;
                 margin-left = 8;
                 margin-right = 8;
@@ -203,7 +203,6 @@
                     "tooltip" = false;
                     "on-click" = "anyrun";
                 };
-
             };
         };
 
@@ -294,7 +293,6 @@
                 border: transparent;
                 border-radius: 10px;
             }
-
 
             #network, #pulseaudio, #power-profiles-daemon {
                 color: #88c0d0;
