@@ -36,9 +36,9 @@
 
                 "clock" = {
                     "format" = "󰃰   {:%a, %b. %d - %I:%M %p}";
-                    "tooltip-format" = "<tt><small>{calendar}</small></tt>";
+                    "tooltip-format" = "<tt><big>{calendar}</big></tt>";
                     "calendar" = {
-                        "mode" = "year";
+                        "mode" = "month";
                         "mode-mon-col" = 3;
                         "weeks-pos" = "right";
                         "on-scroll" = 1;
@@ -104,7 +104,7 @@
                     "format-muted" = "";
                     "format-icons" = {
                         "headphone" = "";
-                        "default" = ["" "" ""];
+                        "default" = ["" "" ""];
                     };
                     "tooltip-format" = "{desc} - {volume}%";
                     "on-click" = "pavucontrol";

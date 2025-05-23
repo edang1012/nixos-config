@@ -60,7 +60,7 @@
 
             #plugin {
                 background-color: transparent;
-                padding-bottom: 3px;
+                padding-bottom: 4px;
             }
 
             #match {

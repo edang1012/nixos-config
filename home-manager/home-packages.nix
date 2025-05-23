@@ -12,6 +12,7 @@
 
     gtk = {
         enable = true;
+        # theme messes with swayosd CSS :(
         theme = {
             name = "Nordic";
             package = pkgs.nordic;
@@ -42,6 +43,7 @@
         brightnessctl
         playerctl
         libnotify
+        syshud
         #gpu-screen-recorder
 
         # apps
