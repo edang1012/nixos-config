@@ -32,8 +32,10 @@
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
-    # Install firefox.
+    # Install common apps
     programs.firefox.enable = true;
+    programs.thunderbird.enable = true;
+    programs.steam.enable = true;
 
     # List packages installed in system profile. To search, run:
     # $ nix search wget

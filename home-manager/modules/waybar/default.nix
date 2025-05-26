@@ -132,7 +132,7 @@
                 };
 
                 "hyprland/workspaces" = {
-                    "format" = "{icon}:  {windows}";
+                    "format" = "{icon}:  {windows} ";
                     "format-window-separator" = " ";
                     "persistent-workspaces" = {
                         "*" = 3;

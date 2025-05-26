@@ -44,18 +44,19 @@
         playerctl
         libnotify
         syshud
+        ffmpeg
+        unzip
+        zip
+        #sysmenu
         #gpu-screen-recorder
 
         # apps
-        vesktop
+        obs-studio
         obsidian
-
-        # Official discord, but doesn't really work
-        #discord
-        #(discord.override {
-        #  withVencord = true;
-        #})
-    ];
+        libreoffice
+        spek
+        vesktop    
+];
 
     # Add arguments to fix DPI/scaling on wayland
     xdg.desktopEntries = {
