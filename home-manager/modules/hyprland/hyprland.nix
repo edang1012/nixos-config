@@ -6,10 +6,13 @@
             monitor = ",preferred,auto,1.333333";
             #monitor = ",preferred,auto,auto";
 
+            xwayland = {
+                force_zero_scaling = true;  
+            };
+
             # Programs
             "$terminal" = "wezterm";
             "$fileManager" = "dolphin";
-            #"$menu" = "wofi --show drun";
             "$menu" = "anyrun";
 
             # Autostart
@@ -23,6 +26,8 @@
             env = [
                 "XCURSOR_SIZE,24"
                 "HYPRCURSOR_SIZE,24"
+                "GDK_SCALE,1.333333"
+                "NIXOS_OZONE_WL,1"
             ];
 
             # Look and Feel

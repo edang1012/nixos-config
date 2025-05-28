@@ -47,6 +47,7 @@
         ffmpeg
         unzip
         zip
+        wev
         #sysmenu
         #gpu-screen-recorder
 
@@ -60,20 +61,20 @@
 
     # Add arguments to fix DPI/scaling on wayland
     xdg.desktopEntries = {
-        spotify = { 
-            name = "Spotify"; 
-            exec = "spotify --enable-features=UseOzonePlatform --ozone-platform=wayland"; 
-            icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/spotify.png";
-        };
+        #spotify = { 
+        #    name = "Spotify";
+        #    exec = "spotify";
+        #    icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/spotify.png";
+        #};
         discord = { 
             name = "Discord"; 
-            exec = "vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"; 
+            exec = "vesktop"; 
             icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/discord.png";
         };
-        obsidian = { 
-            name = "Obsidian"; 
-            exec = "obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland";
-            icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/obsidian.png";
-        };
+        #obsidian = { 
+        #    name = "Obsidian"; 
+        #    exec = "obsidian";
+        #    icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/obsidian.png";
+        #};
     };
 }
