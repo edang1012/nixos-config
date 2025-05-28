@@ -32,16 +32,30 @@
     # Allow unfree packages
     nixpkgs.config.allowUnfree = true;
 
+    # Framework firmware updater
+    services.fwupd.enable = true;
+
+    # Enable for gaming
+    hardware.graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
+
+    services.xserver.videoDrivers = ["amdgpu"];
+
     # Install common apps
     programs.firefox.enable = true;
     programs.thunderbird.enable = true;
+
     programs.steam.enable = true;
+    programs.steam.gamescopeSession.enable = true;
+    programs.gamemode.enable = true;
 
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
         home-manager
-        vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+        vim
         wget
         kitty
         python3

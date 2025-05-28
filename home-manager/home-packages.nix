@@ -49,7 +49,14 @@
         zip
         wev
         #sysmenu
+
+        # gaming
         #gpu-screen-recorder
+        mangohud
+        protonup
+        protonup-qt
+        lutris
+        bottles
 
         # apps
         obs-studio
@@ -57,7 +64,12 @@
         libreoffice
         spek
         vesktop    
-];
+    ];
+
+    home.sessionVariables = {
+        STEAM_EXTRA_COMPAT_TOOLS_PATHS =
+            "\\\${HOME}/.steam/root/compatibilitytools.d";
+    };
 
     # Add arguments to fix DPI/scaling on wayland
     xdg.desktopEntries = {
