@@ -140,9 +140,11 @@
                     "window-rewrite-default" = "";
                     "window-rewrite" = {
                         "class<firefox>" = "󰈹";
+                        "class<thunderbird>" = "";
                         "class<spotify>" = "";
                         "class<obsidian>" = "󱞁";
                         "class<vesktop>" = "";
+                        "class<steam>" = "";
                         "class<org.wezfurlong.wezterm>" = "";
                     };
                 };
