@@ -230,6 +230,11 @@
                 # Ignore maximize requests from apps
                 "suppressevent maximize, class:.*"
 
+                "float, title: ^Picture-in-Picture$"
+                "pin, title: ^Picture-in-Picture$"
+                "move 100%-w-10 100%-w-10, title: ^Picture-in-Picture$"
+
+
                 # Fix some dragging issues with XWayland
                 "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
             ];
