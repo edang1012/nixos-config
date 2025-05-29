@@ -126,7 +126,7 @@
                 background: #3b4252;
                 border: 2px solid #88c0d0;
                 border-radius: 10px;
-                margin-top: 1px;
+                margin-top: 2px;
                 margin-right: -4px;
                 padding: 0px;
             }

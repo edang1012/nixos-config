@@ -219,7 +219,7 @@
             window#waybar {
                 background: #3b4252;
                 border: 2px solid #88c0d0;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             .modules-left>widget:first-child .module {
@@ -238,7 +238,7 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #window, #custom-media, #clock {
@@ -249,7 +249,7 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #battery, #cpu, #memory {
@@ -260,7 +260,7 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #temperature {
@@ -271,7 +271,7 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #custom-notification {
@@ -282,7 +282,7 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #bluetooth {
@@ -293,7 +293,7 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #network, #pulseaudio, #power-profiles-daemon {
@@ -304,14 +304,14 @@
                 margin-top: 0px; 
                 margin-bottom: 0px;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #workspaces {
                 color: #88c0d0;
                 background-color: transparent;
                 border: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #workspaces button {
@@ -321,14 +321,14 @@
             #workspaces button.active {
                 color: #3b4252;
                 background-color: #88c0d0;
-                border-radius: 10px;
+                border-radius: 8px;
             }
 
             #workspaces button:hover {
                 color: #3b4252;
                 background: #88c0d0;
                 border-color: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
                 box-shadow: none;
                 text-shadow: none;
                 transition: none;
@@ -338,7 +338,7 @@
                 color: #3b4252;
                 background: #88c0d0;
                 border-color: transparent;
-                border-radius: 10px;
+                border-radius: 8px;
                 box-shadow: none;
                 text-shadow: none;
                 transition: none;
@@ -347,6 +347,7 @@
             tooltip {
                 background: #3b4252;
                 border: 2px solid #88c0d0;
+                border-radius: 8px;
             }
         
             tooltip label {
