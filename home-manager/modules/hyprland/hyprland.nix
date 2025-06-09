@@ -34,7 +34,7 @@
             general = {
                 gaps_in = 4;
                 gaps_out = 8;
-                border_size = 2;
+                border_size = 1;
 
                 "col.active_border" = "0xff88c0d0";
                 "col.inactive_border" = "0xff3b4252";
@@ -52,7 +52,7 @@
                 inactive_opacity = 1.0;
 
                 shadow = {
-                    enabled = true;
+                    enabled = false;
                     range = 4;
                     render_power = 3;
                     color = "rgba(1a1a1aee)";

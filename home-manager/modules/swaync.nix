@@ -124,7 +124,7 @@
             /* Notifications */
             .notification {
                 background: #3b4252;
-                border: 2px solid #88c0d0;
+                border: 1px solid #88c0d0;
                 border-radius: 10px;
                 margin-top: 2px;
                 margin-right: -4px;
@@ -171,7 +171,7 @@
             /* Control Center */
             .control-center {
                 background: #3b4252;
-                border: 2px solid #88c0d0;
+                border: 1px solid #88c0d0;
                 border-radius: 10px;
                 box-shadow: none;
             }

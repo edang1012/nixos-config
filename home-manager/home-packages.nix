@@ -59,11 +59,22 @@
         bottles
 
         # apps
+        audacity
+        krita
+        libreoffice
+        mediawriter
+        mpv
         obs-studio
         obsidian
-        libreoffice
+        pinta
+        soulseekqt
         spek
-        vesktop    
+        transmission_4-gtk
+        via
+        vial
+        vlc
+        vesktop
+        whipper
     ];
 
     home.sessionVariables = {

@@ -36,7 +36,7 @@
 
                 "clock" = {
                     "format" = "󰃰   {:%a, %b. %d - %I:%M %p}";
-                    "tooltip-format" = "<tt><big>{calendar}</big></tt>";
+                    "tooltip-format" = "<tt><small>{calendar}</small></tt>";
                     "calendar" = {
                         "mode" = "month";
                         "mode-mon-col" = 3;
@@ -218,7 +218,7 @@
 
             window#waybar {
                 background: #3b4252;
-                border: 2px solid #88c0d0;
+                border: 0px solid #88c0d0;
                 border-radius: 8px;
             }
 
@@ -231,7 +231,7 @@
             }
 
             #custom-power {
-                color: #88c0d0;
+                color: #d8dee9;
                 background-color: transparent;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -241,8 +241,8 @@
                 border-radius: 8px;
             }
 
-            #window, #custom-media, #clock {
-                color: #88c0d0;
+            #window {
+                color: #ebcb8b;
                 background-color: transparent;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -252,8 +252,41 @@
                 border-radius: 8px;
             }
 
-            #battery, #cpu, #memory {
-                color: #88c0d0;
+            #clock {
+                color: #d8dee9;
+                background-color: transparent;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 0px; 
+                margin-bottom: 0px;
+                border: transparent;
+                border-radius: 8px;
+            }
+
+            #custom-media {
+                color: #d08770;
+                background-color: transparent;
+                padding-left: 10px;
+                padding-right: 10px;
+                margin-top: 0px; 
+                margin-bottom: 0px;
+                border: transparent;
+                border-radius: 8px;
+            }
+
+            #battery {
+                color: #a3be8c;
+                background-color: transparent;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-top: 0px; 
+                margin-bottom: 0px;
+                border: transparent;
+                border-radius: 8px;
+            }
+
+            #cpu, #memory {
+                color: #b48ead;
                 background-color: transparent;
                 padding-left: 5px;
                 padding-right: 5px;
@@ -275,7 +308,7 @@
             }
 
             #custom-notification {
-                color: #88c0d0;
+                color: #ebcb8b;
                 background-color: transparent;
                 padding-left: 10px;
                 padding-right: 13px;
@@ -296,8 +329,19 @@
                 border-radius: 8px;
             }
 
-            #network, #pulseaudio, #power-profiles-daemon {
+            #network, #pulseaudio {
                 color: #88c0d0;
+                background-color: transparent;
+                padding-left: 5px;
+                padding-right: 8px;
+                margin-top: 0px; 
+                margin-bottom: 0px;
+                border: transparent;
+                border-radius: 8px;
+            }
+
+            #power-profiles-daemon {
+                color: #a3be8c;
                 background-color: transparent;
                 padding-left: 5px;
                 padding-right: 8px;
@@ -346,7 +390,7 @@
 
             tooltip {
                 background: #3b4252;
-                border: 2px solid #88c0d0;
+                border: 1px solid #88c0d0;
                 border-radius: 8px;
             }
         
