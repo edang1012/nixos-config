@@ -20,12 +20,12 @@
             timeout-critical = 0;
 
             # Control Center Settings
-            control-center-margin-top = 8;
+            control-center-margin-top = 16;
             control-center-margin-bottom = 8;
-            control-center-margin-right = 8;
+            control-center-margin-right = 16;
             control-center-margin-left = 8;
             control-center-width = 400;
-            control-center-height = 1075;
+            control-center-height = 1058;
 
             # Notification Settings
             notification-icon-size = 64;
@@ -104,7 +104,7 @@
                             command = "systemctl reboot";
                         }
                         {
-                            label = "⏻";
+                            label = "";
                             command = "systemctl poweroff";
                         }
                     ];
@@ -121,13 +121,13 @@
                 box-shadow: none;
             }
 
-            /* Notifications */
             .notification {
                 background: #3b4252;
                 border: 1px solid #88c0d0;
                 border-radius: 10px;
-                margin-top: 2px;
-                margin-right: -4px;
+                margin-top: 10px;
+                margin-right: 4px;
+                margin-bottom: -5px;
                 padding: 0px;
             }
 
@@ -161,6 +161,7 @@
                 color: #d8dee9;
                 background: #3b4252;
                 border-radius: 8px;
+                margin-top: 13px;
                 outline: none;
             }
 

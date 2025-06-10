@@ -253,7 +253,7 @@
             }
 
             #clock {
-                color: #d8dee9;
+                color: #88c0d0;
                 background-color: transparent;
                 padding-left: 10px;
                 padding-right: 10px;
@@ -286,7 +286,7 @@
             }
 
             #cpu, #memory {
-                color: #b48ead;
+                color: #ebcb8b;
                 background-color: transparent;
                 padding-left: 5px;
                 padding-right: 5px;

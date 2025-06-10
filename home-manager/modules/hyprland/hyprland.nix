@@ -7,6 +7,7 @@
             #monitor = ",preferred,auto,auto";
 
             xwayland = {
+                enabled = true;
                 force_zero_scaling = true;  
             };
 
@@ -147,9 +148,11 @@
                 "$mainMod, T, exec, $terminal"
                 "$mainMod, Q, killactive,"
                 "$mainMod, F, togglefloating,"
+                "$mainMod shift, F, fullscreen,"
                 "$mainMod, space, exec, $menu"
                 "$mainMod, H, togglesplit,"
                 "$mainMod, N, exec, swaync-client -t -sw"
+
                 ", PRINT, exec, hyprshot -m window"
                 "alt, L, exec, hyprlock"
 
@@ -158,6 +161,11 @@
                 "$mainMod, L, movefocus, r"
                 "$mainMod, I, movefocus, u"
                 "$mainMod, K, movefocus, d"
+
+                "$mainMod shift, J, movewindow, l"
+                "$mainMod shift, L, movewindow, r"
+                "$mainMod shift, I, movewindow, u"
+                "$mainMod shift, K, movewindow, d"
 
                 # Switch workspaces with mainMod + [0-9]
                 "$mainMod, 1, workspace, 1"
@@ -172,16 +180,27 @@
                 "$mainMod, 0, workspace, 10"
 
                 # Move active window to a workspace with mainMod + SHIFT + [0-9]
-                "$mainMod SHIFT, 1, movetoworkspace, 1"
-                "$mainMod SHIFT, 2, movetoworkspace, 2"
-                "$mainMod SHIFT, 3, movetoworkspace, 3"
-                "$mainMod SHIFT, 4, movetoworkspace, 4"
-                "$mainMod SHIFT, 5, movetoworkspace, 5"
-                "$mainMod SHIFT, 6, movetoworkspace, 6"
-                "$mainMod SHIFT, 7, movetoworkspace, 7"
-                "$mainMod SHIFT, 8, movetoworkspace, 8"
-                "$mainMod SHIFT, 9, movetoworkspace, 9"
-                "$mainMod SHIFT, 0, movetoworkspace, 10"
+                "$mainMod shift, 1, movetoworkspace, 1"
+                "$mainMod shift, 2, movetoworkspace, 2"
+                "$mainMod shift, 3, movetoworkspace, 3"
+                "$mainMod shift, 4, movetoworkspace, 4"
+                "$mainMod shift, 5, movetoworkspace, 5"
+                "$mainMod shift, 6, movetoworkspace, 6"
+                "$mainMod shift, 7, movetoworkspace, 7"
+                "$mainMod shift, 8, movetoworkspace, 8"
+                "$mainMod shift, 9, movetoworkspace, 9"
+                "$mainMod shift, 0, movetoworkspace, 10"
+
+                "$mainMod alt, 1, movetoworkspacesilent, 1"
+                "$mainMod alt, 2, movetoworkspacesilent, 2"
+                "$mainMod alt, 3, movetoworkspacesilent, 3"
+                "$mainMod alt, 4, movetoworkspacesilent, 4"
+                "$mainMod alt, 5, movetoworkspacesilent, 5"
+                "$mainMod alt, 6, movetoworkspacesilent, 6"
+                "$mainMod alt, 7, movetoworkspacesilent, 7"
+                "$mainMod alt, 8, movetoworkspacesilent, 8"
+                "$mainMod alt, 9, movetoworkspacesilent, 9"
+                "$mainMod alt, 0, movetoworkspacesilent, 10"
 
                 # Example special workspace (scratchpad)
                 #"$mainMod, S, togglespecialworkspace, magic"
