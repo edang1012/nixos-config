@@ -57,6 +57,8 @@
         protonup-qt
         lutris
         bottles
+        wine
+        winetricks
 
         # apps
         audacity
@@ -84,16 +86,24 @@
 
     # Add arguments to fix DPI/scaling on wayland
     xdg.desktopEntries = {
+discord = { 
+            name = "Discord"; 
+            exec = "vesktop"; 
+            icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/discord.png";
+        };
+
+        MusicBee = { 
+            name = "MusicBee"; 
+            exec = "wine /home/xenosen/Desktop/MusicBee/MusicBee.exe"; 
+            icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/musicbee.png";
+        };
+
         #spotify = { 
         #    name = "Spotify";
         #    exec = "spotify";
         #    icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/spotify.png";
         #};
-        discord = { 
-            name = "Discord"; 
-            exec = "vesktop"; 
-            icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/discord.png";
-        };
+
         #obsidian = { 
         #    name = "Obsidian"; 
         #    exec = "obsidian";

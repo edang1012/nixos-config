@@ -10,5 +10,6 @@
         ./hyprland.nix
         ./git.nix
         ./vm.nix
+        ./nas.nix
     ];
 }
