@@ -132,9 +132,9 @@
             };
 
             device = {
-                #name = bcm5974;
-                name = "epic-mouse-v1";
-                sensitivity = "-0.5";
+                name = "compx-xlite-mini-wireless";
+                sensitivity = "-0.75";
+                natural_scroll = true;
             };
 
             gestures = {

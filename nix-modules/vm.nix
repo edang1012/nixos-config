@@ -11,8 +11,10 @@
     environment.systemPackages = with pkgs; [
         virt-manager
         virt-viewer
-        spice spice-gtk
+        spice
+        spice-gtk
         spice-protocol
+        spice-vdagent
         win-virtio
         win-spice
     ];
