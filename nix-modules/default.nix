@@ -9,5 +9,6 @@
         ./home-manager.nix
         ./hyprland.nix
         ./git.nix
+        ./vm.nix
     ];
 }

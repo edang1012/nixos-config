@@ -182,6 +182,7 @@
                 padding: 0px;
                 outline: none;
             }
+
             .control-center .notification {
                 margin: 0px 0px -5px 0px;
                 outline: none;

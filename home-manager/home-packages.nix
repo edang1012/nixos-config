@@ -100,4 +100,11 @@
         #    icon = "/home/xenosen/Documents/git/nixos-config/home-manager/icons/obsidian.png";
         #};
     };
+
+    dconf.settings = {
+        "org/virt-manager/virt-manager/connections" = {
+            autoconnect = ["qemu:///system"];
+            uris = ["qemu:///system"];
+        };
+    };
 }
