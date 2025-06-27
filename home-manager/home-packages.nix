@@ -62,6 +62,7 @@
 
         # apps
         audacity
+        feishin
         krita
         libreoffice
         mediawriter

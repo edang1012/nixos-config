@@ -145,7 +145,9 @@
                         "class<obsidian>" = "󱞁";
                         "class<vesktop>" = "";
                         "class<steam>" = "";
+                        "class<feishin>" = "";
                         "class<org.wezfurlong.wezterm>" = "";
+                        "class<.virt-manager-wrapped>" = "";
                     };
                 };
 
