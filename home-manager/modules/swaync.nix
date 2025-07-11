@@ -20,12 +20,12 @@
             timeout-critical = 0;
 
             # Control Center Settings
-            control-center-margin-top = 16;
+            control-center-margin-top = 20;
             control-center-margin-bottom = 8;
-            control-center-margin-right = 16;
+            control-center-margin-right = 20;
             control-center-margin-left = 8;
             control-center-width = 400;
-            control-center-height = 1058;
+            control-center-height = 1050;
 
             # Notification Settings
             notification-icon-size = 64;
@@ -123,7 +123,7 @@
 
             .notification {
                 background: #3b4252;
-                border: 1px solid #88c0d0;
+                border: 2px solid #88c0d0;
                 border-radius: 10px;
                 margin-top: 10px;
                 margin-right: 4px;
@@ -172,7 +172,7 @@
             /* Control Center */
             .control-center {
                 background: #3b4252;
-                border: 1px solid #88c0d0;
+                border: 2px solid #88c0d0;
                 border-radius: 10px;
                 box-shadow: none;
             }

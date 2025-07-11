@@ -35,7 +35,7 @@
             general = {
                 gaps_in = 4;
                 gaps_out = 8;
-                border_size = 1;
+                border_size = 2;
 
                 "col.active_border" = "0xff88c0d0";
                 "col.inactive_border" = "0xff3b4252";
