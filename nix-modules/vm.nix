@@ -3,7 +3,7 @@
 {
     # Enable dconf (System Management Tool)
     programs.dconf.enable = true;
- 
+
     # Add user to libvirtd group
     users.users.xenosen.extraGroups = [ "libvirtd" ];
 
@@ -17,6 +17,7 @@
         spice-vdagent
         win-virtio
         win-spice
+        remmina
     ];
 
     # Manage the virtualisation services
@@ -33,4 +34,9 @@
         spiceUSBRedirection.enable = true;
     };
     services.spice-vdagentd.enable = true;
+
+    # Enable RDP for remote desktop
+    services.xrdp.enable = true;
+    services.xrdp.defaultWindowManager = "startplasma-x11";
+    services.xrdp.openFirewall = true;
 }

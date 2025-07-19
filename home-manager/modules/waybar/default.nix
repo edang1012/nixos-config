@@ -148,6 +148,7 @@
                         "class<feishin>" = "";
                         "class<org.wezfurlong.wezterm>" = "";
                         "class<.virt-manager-wrapped>" = "";
+                        "class<org.remmina.Remmina>" = "";
                     };
                 };
 
