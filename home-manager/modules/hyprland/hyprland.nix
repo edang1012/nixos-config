@@ -19,6 +19,7 @@
             # Autostart
             exec-once = [
                 "waybar & hypridle & hyprpaper"
+                #"hyprsunset -t 4500"
                 "wlsunset -T 4500"
                 "syshud"
             ];

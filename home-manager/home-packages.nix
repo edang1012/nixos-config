@@ -39,6 +39,7 @@
         zoxide
         hyprshot
         hyprpicker
+        #hyprsunset
         wlsunset
         brightnessctl
         playerctl
@@ -70,7 +71,6 @@
         obs-studio
         obsidian
         pinta
-        soulseekqt
         spek
         transmission_4-gtk
         via
