@@ -25,7 +25,7 @@
             control-center-margin-right = 20;
             control-center-margin-left = 8;
             control-center-width = 400;
-            control-center-height = 1050;
+            control-center-height = 1046;
 
             # Notification Settings
             notification-icon-size = 64;
@@ -37,7 +37,7 @@
                 "dnd"
                 "title"
                 "notifications"
-                "mpris"
+                #"mpris"
                 "volume"
                 "buttons-grid"
             ];
@@ -212,8 +212,8 @@
                 color: #d8dee9;
                 background: #2e3440;
                 border-radius: 10px;
-                padding: 5px 5px 5px 15px;
-                margin: 10px 10px -10px 10px;
+                padding: 0px 10px 0px 10px;
+                margin: 10px 10px 0px 10px;
             }
 
             .widget-title>label {
@@ -240,7 +240,7 @@
                 color: #d8dee9;
                 background: #2e3440;
                 border-radius: 10px;
-                padding: 5px 5px 5px 15px;
+                padding: 2px 10px 2px 10px;
                 margin: 10px 10px 0px 10px;
             }
 
@@ -356,6 +356,7 @@
 
             .widget-mpris-title, 
             .widget-mpris-subtitle {
+                background: none;
                 color: #d8dee9;
             }
 
