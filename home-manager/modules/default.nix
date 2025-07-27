@@ -10,7 +10,7 @@
         ./anyrun.nix
         ./fastfetch.nix
         ./nvf.nix
-        ./spicetify.nix
+        #./spicetify.nix
         ./starship.nix
         ./swaync.nix
         ./tmux.nix

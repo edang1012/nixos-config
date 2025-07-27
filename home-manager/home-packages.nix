@@ -72,6 +72,7 @@
         obsidian
         pinta
         spek
+        spotify
         transmission_4-gtk
         via
         vial

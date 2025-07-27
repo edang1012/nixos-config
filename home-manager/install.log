@@ -1,0 +1,7 @@
+[23:47:46 2025-07-21] FETCHING Version 2.40.11
+[23:47:46 2025-07-21] CREATING /home/xenosen/.spicetify
+[23:47:46 2025-07-21] DOWNLOADING https://github.com/spicetify/cli/releases/download/v2.40.11/spicetify-2.40.11-linux-amd64.tar.gz
+[23:47:48 2025-07-21] EXTRACTING /home/xenosen/.spicetify/spicetify.tar.gz
+[23:47:48 2025-07-21] SETTING EXECUTABLE PERMISSIONS TO /home/xenosen/.spicetify/spicetify
+[23:47:48 2025-07-21] REMOVING /home/xenosen/.spicetify/spicetify.tar.gz
+[23:47:48 2025-07-21] APPENDING /home/xenosen/.spicetify to PATH in /home/xenosen/.zshrc
