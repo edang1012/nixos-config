@@ -206,7 +206,8 @@
                     "format" = "";
                     "interval" = "once";
                     "tooltip" = false;
-                    "on-click" = "anyrun";
+                    #"on-click" = "anyrun";
+                    "on-click" = "pkill -USR1 nwg-drawer";
                 };
             };
         };
