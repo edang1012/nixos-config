@@ -45,11 +45,12 @@
         playerctl
         libnotify
         syshud
+        #sysmenu
+        nwg-drawer
         ffmpeg
         unzip
         zip
         wev
-        #sysmenu
 
         # gaming
         #gpu-screen-recorder

@@ -29,6 +29,11 @@
         recursive = true;
     };
 
+    home.file.".config/nwg-drawer/" = {
+        source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Documents/git/nixos-config/home-manager/modules/nwg-drawer";
+        recursive = true;
+    };
+
     #home.file.".config/sys64/menu/" = {
     #    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/Documents/git/nixos-config/home-manager/modules/sysmenu";
     #    recursive = true;

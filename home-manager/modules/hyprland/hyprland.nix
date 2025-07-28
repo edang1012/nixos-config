@@ -22,6 +22,7 @@
                 #"hyprsunset -t 4500"
                 "wlsunset -T 4500"
                 "syshud"
+                "nwg-drawer -r -mt 8 -mb 8 -ml 8 -mr 8 -c 8 -nocats"
             ];
 
             # Environment Variables
@@ -153,6 +154,7 @@
                 "$mainMod, space, exec, $menu"
                 "$mainMod, H, togglesplit,"
                 "$mainMod, N, exec, swaync-client -t -sw"
+                "$mainMod, A, exec, pkill -USR1 nwg-drawer"
 
                 ", PRINT, exec, hyprshot -m window"
                 "alt, L, exec, hyprlock"
