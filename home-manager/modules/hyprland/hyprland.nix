@@ -23,7 +23,7 @@
                 "wlsunset -T 4500"
                 "syshud"
                 "nwg-drawer -r -mt 8 -mb 8 -ml 8 -mr 8 -c 8 -nocats"
-                "clipse -listen"
+                "sleep 1; clipse -listen"
             ];
 
             # Environment Variables
@@ -158,7 +158,10 @@
                 "$mainMod, A, exec, pkill -USR1 nwg-drawer"
                 "$mainMod, V, exec, kitty --class clipse -e 'clipse'"
 
-                ", PRINT, exec, hyprshot -m window"
+                ", PRINT, exec, hyprshot -m output"
+                "$mainMod, PRINT, exec, hyprshot -m window"
+                "shift, PRINT, exec, hyprshot -m region"
+
                 "alt, L, exec, hyprlock"
 
                 # Move focus
@@ -261,7 +264,7 @@
                 "move 100%-w-10 100%-w-10, title: ^Picture-in-Picture$"
 
                 "float, class:(clipse)"
-                "size 622 652, class:(clipse)"
+                "size 800 500, class:(clipse)"
 
                 # Fix some dragging issues with XWayland
                 "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"

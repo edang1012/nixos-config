@@ -8,6 +8,7 @@
 
         # nix files
         ./anyrun.nix
+        ./clipse.nix
         ./fastfetch.nix
         ./nvf.nix
         #./spicetify.nix
