@@ -29,7 +29,7 @@
             # User Avatar
             image = [
                 {
-                    path = "~/Pictures/Profile_pics/profile3.jpg";
+                    path = "~/Pictures/Profile_pics/profile2.jpg";
                     size = 120;
                     border_color = "0xff88c0d0";
 

@@ -11,15 +11,26 @@
 
     # Enable networking
     networking.networkmanager.enable = true;
-
     services.tailscale.enable = true;
+
+    # Enable bluetooth
+    services.blueman.enable = true;
+    hardware.bluetooth = {
+        enable = true;
+        powerOnBoot = true;
+        settings = {
+            General = {
+                Experimental = true; # Show battery charge of Bluetooth devices
+            };
+        };
+    };
 
     # Enable the X11 windowing system.
     services.xserver.enable = true;
 
     # Enable the GNOME Desktop Environment.
-    services.xserver.displayManager.gdm.enable = true;
-    services.xserver.desktopManager.gnome.enable = true;
+    services.displayManager.gdm.enable = true;
+    services.desktopManager.gnome.enable = true;
     services.gvfs.enable = true;
 
     # Configure keymap in X11
@@ -39,8 +50,8 @@
 
     # Enable for gaming
     hardware.graphics = {
-      enable = true;
-      enable32Bit = true;
+        enable = true;
+        enable32Bit = true;
     };
 
     services.xserver.videoDrivers = ["amdgpu"];

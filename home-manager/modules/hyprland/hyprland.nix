@@ -24,7 +24,7 @@
                 "syshud"
                 "nwg-drawer -r -mt 8 -mb 8 -ml 8 -mr 8 -c 8 -nocats"
                 "sleep 1; clipse -listen"
-                "gpu-screen-recorder -w screen -f 60 -r 120 -c mp4 -o ~/Videos/Replays"
+                #"gpu-screen-recorder -w screen -f 60 -r 120 -c mp4 -o ~/Videos/Replays"
             ];
 
             # Environment Variables

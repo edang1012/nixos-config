@@ -69,19 +69,19 @@
                     actions = [
                         {
                             label = "󰻃";
-                            command = "obs";
+                            command = "pkill -SIGUSR1 -f gpu-screen-recorder";
                         }
                         {
                             label = "󰹑";
-                            command = "hyprshot -m output --clipboard-only";
+                            command = "hyprshot -m output";
                         }
                         {
                             label = "󱣴";
-                            command = "hyprshot -m window --clipboard-only";
+                            command = "hyprshot -m window";
                         }
                         {
                             label = "󱣵";
-                            command = "hyprshot -m region --clipboard-only";
+                            command = "hyprshot -m region";
                         }
                         {
                             label = "󰴱";
