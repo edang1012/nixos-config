@@ -56,7 +56,8 @@
         wev
 
         # gaming
-        #gpu-screen-recorder
+        gpu-screen-recorder
+        gpu-screen-recorder-gtk
         mangohud
         protonup
         protonup-qt

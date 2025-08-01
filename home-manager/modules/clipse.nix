@@ -1,6 +1,7 @@
 {
     services.clipse = {
         enable = true;
+        historySize = 100;
         imageDisplay = {
             type = "kitty";
             scaleX = 20;

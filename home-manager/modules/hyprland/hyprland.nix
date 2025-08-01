@@ -24,6 +24,7 @@
                 "syshud"
                 "nwg-drawer -r -mt 8 -mb 8 -ml 8 -mr 8 -c 8 -nocats"
                 "sleep 1; clipse -listen"
+                "gpu-screen-recorder -w screen -f 60 -r 120 -c mp4 -o ~/Videos/Replays"
             ];
 
             # Environment Variables
@@ -235,7 +236,9 @@
                 ",XF86KbdBrightnessUp, exec, brightnessctl -d smc::kbd_backlight s 10%+"
                 ",XF86KbdBrightnessDown, exec, brightnessctl -d smc::kbd_backlight s 10%-"
 
-                ",XF86AudioMedia, exec, kitty --class clipse -e 'clipse'"
+                # Single command didn't work, so split into 2
+                ",XF86AudioMedia, exec, pkill -SIGUSR1 -f gpu-screen-recorder"
+                ",XF86AudioMedia, exec, notify-send -t 1500 -u low -- \"GPU Screen Recorder\" \"Replay saved\""
 
                 #",XF86AudioRaiseVolume, exec, swayosd-client --output-volume 10 --max-volume 100"
                 #",XF86AudioLowerVolume, exec, swayosd-client --output-volume -10"

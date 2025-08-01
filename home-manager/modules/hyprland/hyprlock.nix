@@ -19,7 +19,7 @@
             # Background
             background = [
                 {
-                    path = "~/Pictures/wallpaper1.jpg";
+                    path = "~/Pictures/Wallpapers/wallpaper1.jpg";
                     blur_passes = 2;
                     blur_size = 4;
                     color = "0xff434c5e";
@@ -29,7 +29,7 @@
             # User Avatar
             image = [
                 {
-                    path = "~/Pictures/profile3.jpg";
+                    path = "~/Pictures/Profile_pics/profile3.jpg";
                     size = 120;
                     border_color = "0xff88c0d0";
 
