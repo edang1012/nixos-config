@@ -57,11 +57,13 @@
 
                 "cpu" = {
                     "format" = "    {usage}%";
+                    "on-click" = "wezterm start btop";
                 };
 
                 "memory" = {
                     "format" = "     {percentage}%";
                     "tooltip-format" = "RAM: {used}/{total} GB\nSwap: {swapUsed}/{swapTotal} GB";
+                    "on-click" = "wezterm start btop";
                 };
 
                 "temperature" = {
@@ -107,7 +109,7 @@
                         "default" = ["" "" ""];
                     };
                     "tooltip-format" = "{desc} - {volume}%";
-                    "on-click" = "pavucontrol";
+                    "on-click" = "easyeffects";
                 };
 
                 "network" = {
@@ -120,6 +122,7 @@
                     "tooltip-format-ethernet" = "{ifname}";
                     "tooltip-format-disconnected" = "Disconnected";
                     "max-length" = 50;
+                    "on-click" = "wezterm start nmtui";
                 };
 
                 "bluetooth" = {
@@ -129,6 +132,7 @@
                     "tooltip-format" = "{controller_alias}\t{controller_address}";
                     "tooltip-format-connected" = "{controller_alias}\t{controller_address}\n\n{device_enumerate}";
                     "tooltip-format-enumerate-connected" = "{device_alias}\t{device_address}";
+                    "on-click" = "blueman-manager";
                 };
 
                 "hyprland/workspaces" = {
