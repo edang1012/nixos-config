@@ -137,7 +137,7 @@
 
             device = {
                 name = "compx-xlite-mini-wireless";
-                sensitivity = "-0.75";
+                sensitivity = "-0.85";
                 natural_scroll = true;
             };
 
