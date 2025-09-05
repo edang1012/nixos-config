@@ -35,11 +35,13 @@
 
             widgets = [
                 "dnd"
+                "buttons-grid"
+                "volume"
                 "title"
                 "notifications"
                 #"mpris"
-                "volume"
-                "buttons-grid"
+                #"volume"
+                #"buttons-grid"
             ];
             widget-config = {
                 title = {
@@ -117,7 +119,8 @@
             * {
                 font-family: "Noto Sans CJK JP";
                 font-weight: bold;
-                font-size: 14px;
+                font-size: 16px;
+                color: #d8dee9;
                 box-shadow: none;
             }
 
@@ -213,7 +216,7 @@
                 background: #2e3440;
                 border-radius: 10px;
                 padding: 0px 10px 0px 10px;
-                margin: 10px 10px 0px 10px;
+                margin: 0px 10px 0px 10px;
             }
 
             .widget-title>label {
@@ -241,7 +244,7 @@
                 background: #2e3440;
                 border-radius: 10px;
                 padding: 2px 10px 2px 10px;
-                margin: 10px 10px 0px 10px;
+                margin: 10px 10px 10px 10px;
             }
 
             .widget-dnd>switch {
@@ -252,7 +255,7 @@
             }
             
             .widget-dnd>switch:checked {
-                background: #88c0d0;
+                background: #3b4252;
                 border: none;
                 border-radius: 8px;
                 margin: 2px 2px 2px 2px;
@@ -276,8 +279,8 @@
                 color: #d8dee9;
                 background: #2e3440;
                 border-radius: 10px;
-                padding: 5px 5px 5px 15px;
-                margin: 0px 10px 10px 10px;
+                padding: 10px 5px 5px 15px;
+                margin: -20px 10px 10px 10px;
             }
 
             .widget-volume trough {
@@ -388,8 +391,8 @@
             .widget-buttons-grid {
                 background: #2e3440;
                 border-radius: 10px;
-                padding: 10px;
-                margin: 0px 10px 10px 10px;
+                padding: 10px 10px 15px 10px;
+                margin: 0px 10px 0px 10px;
                 outline: none;
             } 
 
