@@ -64,6 +64,10 @@
     programs.steam.gamescopeSession.enable = true;
     programs.gamemode.enable = true;
 
+    # QMK/VIA Settings
+    hardware.keyboard.qmk.enable = true;
+    services.udev.packages = [ pkgs.via ];
+
     # List packages installed in system profile. To search, run:
     # $ nix search wget
     environment.systemPackages = with pkgs; [
@@ -74,6 +78,8 @@
         python3
         gnumake
         gcc
+        qmk
+        via
     ];
 
     system.stateVersion = stateVersion; 

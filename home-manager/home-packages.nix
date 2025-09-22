@@ -69,6 +69,7 @@
         # apps
         audacity
         feishin
+        google-chrome
         krita
         libreoffice
         mediawriter
@@ -79,7 +80,6 @@
         spek
         spotify
         transmission_4-gtk
-        via
         vial
         vlc
         vesktop
