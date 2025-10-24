@@ -9,6 +9,26 @@
 
     networking.hostName = hostname; # Define your hostname.
 
+    boot.loader = {
+        efi.canTouchEfiVariables = true;
+        systemd-boot = {
+            enable = true;
+            windows = {
+                "windows" = 
+                let
+                    boot-drive = "HD1f0b";
+                in
+                {
+                    title = "Windows";
+                    efiDeviceHandle = boot-drive;
+                    sortKey = "y_windows";
+                };
+            };
+            #edk2-uefi-shell.enable = true;
+            #edk2-uefi-shell.sortKey = "z_edk2";
+        }; 
+    };
+
     # Enable networking
     networking.networkmanager.enable = true;
     services.tailscale.enable = true;
