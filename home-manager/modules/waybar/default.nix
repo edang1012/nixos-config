@@ -113,7 +113,7 @@
                 };
 
                 "network" = {
-                    "format" = "{ifname}";
+                    "format" = "";
                     "format-wifi" = "󰖩";
                     "format-ethernet" = "󰈀";
                     "format-disconnected" = "󰖪";
