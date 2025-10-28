@@ -77,6 +77,7 @@
         obs-studio
         obsidian
         pinta
+        protonvpn-gui
         spek
         spotify
         transmission_4-gtk
